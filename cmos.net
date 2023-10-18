@@ -1,0 +1,11 @@
+* E:\engg\7th sem\project\cmos.asc
+V2 N001 0 1
+M1 N001 N003 out N002 PMOS
+M2 out N003 0 N004 NMOS
+V1 N003 0 PULSE(0 1 0 0 0 20m 40m 5)
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\ADMIN\AppData\Local\LTspice\lib\cmp\standard.mos
+.tran 0 200m 0
+.backanno
+.end
